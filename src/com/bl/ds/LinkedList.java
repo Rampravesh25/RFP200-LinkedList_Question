@@ -18,4 +18,14 @@ public class LinkedList<K> {
             temp = temp.next;
         }
     }
+
+    public void add(K key) {
+        Node<K> newNode = new Node<>(key);
+        if (head == null) {
+            head = newNode;
+        } else {
+            tail.next = newNode;
+        }
+        tail = newNode;
+    }
 }
