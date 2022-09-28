@@ -53,4 +53,17 @@ public class LinkedList<K> {
     public void pop() {
         head = head.next;
     }
+
+
+    public void popLast() {
+        Node<K> temp = head;
+        Node<K> lastSecond = null;
+
+        while (temp.next != null) {
+            lastSecond = temp;
+            temp = temp.next;
+        }
+        lastSecond.next = null;
+        head = lastSecond;
+    }
 }

@@ -2,12 +2,12 @@ package com.bl.ds;
 
 public class LinkedListMain {
     public static void main(String[] args) {
-        System.out.println("Welcome to Data Structure and Algorithm program:- ");
+        System.out.println("Welcome to Data Structure and Algorithm program ");
 
         LinkedList l1 = new LinkedList();
-        l1.push(56);
-        l1.push(30);
         l1.push(70);
+        l1.push(30);
+        l1.push(56);
 
         l1.print();
 
@@ -23,11 +23,15 @@ public class LinkedListMain {
         l3.add(56);
         l3.add(30);
 
-        l3.insert(70,56);
+        l3.insert(70, 56);
         System.out.println();
         l3.print();
 
         l3.pop();
+        System.out.println();
+        l3.print();
+
+        l3.popLast();
         System.out.println();
         l3.print();
 
