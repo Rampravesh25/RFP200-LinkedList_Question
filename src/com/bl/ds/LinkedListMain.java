@@ -26,5 +26,10 @@ public class LinkedListMain {
         l3.insert(70,56);
         System.out.println();
         l3.print();
+
+        l3.pop();
+        System.out.println();
+        l3.print();
+
     }
 }
